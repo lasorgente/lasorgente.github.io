@@ -9,7 +9,7 @@ pr/*
 /* ======= Base ======= */
 body {
   font-family: 'Lato', arial, sans-serif;
-  color: #053C4E;
+  color: #3d3d3f;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -67,6 +67,14 @@ a.btn-cta-primary:hover,
   border: 1px solid #053c4e;
   color: #fff;
 }
+.logo-small{
+	width:auto;
+	height:95px;
+}
+.logo-mobile{
+	width:auto;
+	height:100px;
+}
 a.btn-cta-secondary,
 .btn-cta-secondary {
   background: #eebf3f;
@@ -81,9 +89,15 @@ a.btn-cta-secondary:hover,
   border: 1px solid #ecb728;
   color: #fff;
 }
+p{
+	font-family:'caviar';
+	font-size: 1.2em;
+}
+}
 .text-highlight {
   color: #074f66;
 }
+
 .offset-header {
   padding-top: 90px;
 }
@@ -93,13 +107,13 @@ pre code {
 /* ======= Header ======= */
 .header {
   padding: 10px 0;
-  background: #ffa64d;
+  background: #3d3d3f;
   color: #fff;
   position: fixed;
   width: 100%;
+  height:75px;
 }
 .header.navbar-fixed-top {
-  background: #fff;
   z-index: 9999;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
@@ -115,6 +129,7 @@ pre code {
   margin: 0;
   font-size: 26px;
   padding-top: 10px;
+  margin-top: -22px;
 }
 .header .logo a {
   color: #fff;
@@ -123,7 +138,6 @@ pre code {
   text-decoration: none;
 }
 .header .main-nav button {
-  background: #074f66;
   color: #fff !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -149,17 +163,19 @@ pre code {
   font-family: 'Montserrat', sans-serif;
 }
 .header .main-nav .nav .nav-item.active a {
-  color: #ffa64d;
+  color: #e85d0f;
   background: none;
 }
 .header .main-nav .nav .nav-item a {
-  color: #0a7396;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
-  font-size: 14px;
-  padding: 15px 10px;
+  color: #fff;
+-webkit-transition: none;
+-moz-transition: none;
+-ms-transition: none;
+-o-transition: none;
+font-size: 1.2em;
+padding: 15px 10px;
+text-transform: uppercase;
+font-family: 'caviar';
 }
 .header .main-nav .nav .nav-item a:hover {
   color: #074f66;
@@ -180,6 +196,23 @@ pre code {
   margin-right: 0;
 }
 /* ======= Promo Section ======= */
+.opac{
+	background-color:rgba(61, 61, 63, 0.5);
+	padding: 20px;
+	color:#fff;
+	margin-top:100px;
+}
+.white{
+	color:#fff;
+}
+@font-face{
+	font-family: 'Swis';
+	src:url(../swis721-bt.ttf);
+}
+@font-face{
+	font-family: 'caviar';
+	src:url(../caviar.ttf);
+}
 .promo {
   width: 100%;
   display: block;
@@ -190,11 +223,11 @@ pre code {
 }
 .promo::after{
 content: "";
-	background: transparent url("../../img/immagine1.JPG") no-repeat;
+	background: transparent url("../../img/lasorgente-alta.JPG") no-repeat;
   background-size: 100% 100%;
   color: #fff;
-  opacity: 0.6;
-  top: 0;
+  opacity: 1;
+  top: 75px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -202,12 +235,13 @@ content: "";
   z-index: -1;   
 }
 .promo .title {
+  font-family:'Swis';
   font-size: 98px;
-  color: #F9F9F9;
+  color: #3d3d3f;
   margin-top: 0;
 }
 .promo .title .highlight {
-  color: #ffa64d;
+  color: #3d3d3f;
 }
 .promo .intro {
   font-size: 28px;
@@ -253,9 +287,10 @@ content: "";
   background: #f5f5f5;
 }
 .about .title {
-  color: #074f66;
+  color: #3d3d3f;
   margin-top: 0;
   margin-bottom: 60px;
+  font-family:'Swis';
 }
 .about .intro {
   max-width: 800px;
@@ -286,7 +321,7 @@ content: "";
 /* ======= Features Section ======= */
 .features {
   padding: 80px 0;
-  background: #ffa64d;
+  background: #e85d0f;
   color: #fff;
 }
 .features .title {
@@ -307,6 +342,10 @@ content: "";
 .features .feature-list li .fa {
   margin-right: 5px;
   color: #fff;
+}
+.logo-lasorgente{
+	width:auto;
+	height:175px;
 }
 /* ======= Docs Section ======= */
 .docs {
@@ -430,7 +469,7 @@ content: "";
 .contact {
   padding: 80px 0;
   background: #f5f5f5;
-  color: #fff;
+  
 }
 .contact .contact-inner {
   max-width: 760px;
@@ -536,7 +575,7 @@ content: "";
 }
 .contact .social-icons a {
   display: inline-block;
-  background: #0c86ae;
+  background: #3d3d3f;
   width: 48px;
   height: 48px;
   text-align: center;
@@ -553,7 +592,7 @@ content: "";
   float: left;
 }
 .contact .social-icons a:hover {
-  background: #e6ad14;
+  background: #e85d0f;
 }
 .contact .social-icons a .fa {
   color: #fff;
@@ -582,6 +621,15 @@ content: "";
   .header .main-nav button {
     margin-right: 0;
   }
+  .promo {
+  padding-top: 10px;
+  height:500px;
+  
+}
+  .logo-lasorgente{
+	width:auto;
+	height:85px;
+}
   .header .main-nav .navbar-collapse {
     padding-left: 15px;
     padding-right: 15px;

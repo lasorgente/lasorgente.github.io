@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  color:#3d3d3f;
 }
 article,
 aside,
@@ -6338,7 +6339,7 @@ button.close {
   display: none !important;
 }
 @media print {
-  .visible-print-inline {
+  .visible-print-inline {bod
     display: inline !important;
   }
 }
