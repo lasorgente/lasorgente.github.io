@@ -4,23 +4,21 @@ jQuery(document).ready(function($) {
     $('body').scrollspy({ target: '#header', offset: 400});
     
     /* ======= Fixed header when scrolled ======= */
+    if(screen.width > 1340){
+    	$('#logo-id').addClass('logo-lasorgente');
+    }
+    else {
+    	$('#logo-id').addClass('logo-small');
+    }
     
     
     $(window).bind('scroll', function() {
-        if (screen && screen.width < 1340) {
-         	$('.log').addClass('logo-mobile');
-         	}
-         else{
-         	
+        if(screen.width > 1340){
          	if ($(window).scrollTop() > 300) {
-         		$('.log').removeClass('logo-lasorgente');
-             	$('.log').addClass('logo-small');
+         		$('#logo-id').removeClass('logo-lasorgente');
+             	$('#logo-id').addClass('logo-small');
         	 }
-        	else {
-        		$('.log').addClass('logo-lasorgente');
-         	}
-        }
-         
+        }	
       
     });
    

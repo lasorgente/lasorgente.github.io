@@ -67,6 +67,9 @@ a.btn-cta-primary:hover,
   border: 1px solid #053c4e;
   color: #fff;
 }
+.left{
+	float:left;
+}
 .logo-small{
 	width:auto;
 	height:95px;
@@ -74,6 +77,12 @@ a.btn-cta-primary:hover,
 .logo-mobile{
 	width:auto;
 	height:100px;
+}
+
+.responsive-img{
+	width:50%;
+	height:auto;
+	border-radius:5px;
 }
 a.btn-cta-secondary,
 .btn-cta-secondary {
@@ -92,7 +101,17 @@ a.btn-cta-secondary:hover,
 p{
 	font-family:'caviar';
 	font-size: 1.2em;
+	
 }
+.right-text{
+	width:45%;
+	float:left;
+	margin-left:2.5%;
+	margin-top:10px;
+	font-size:1.5em;
+}
+.clear{
+	clear:both;
 }
 .text-highlight {
   color: #074f66;
@@ -101,6 +120,7 @@ p{
 .offset-header {
   padding-top: 90px;
 }
+
 pre code {
   font-size: 16px;
 }
@@ -112,6 +132,10 @@ pre code {
   position: fixed;
   width: 100%;
   height:75px;
+  z-index: 100 !important;
+}
+.dark{
+	color:#3d3d3f;
 }
 .header.navbar-fixed-top {
   z-index: 9999;
@@ -130,6 +154,9 @@ pre code {
   font-size: 26px;
   padding-top: 10px;
   margin-top: -22px;
+}
+.middle-text{
+	margin-left:25%;
 }
 .header .logo a {
   color: #fff;
@@ -178,7 +205,7 @@ text-transform: uppercase;
 font-family: 'caviar';
 }
 .header .main-nav .nav .nav-item a:hover {
-  color: #074f66;
+  color: #e85d0f;
   background: none;
 }
 .header .main-nav .nav .nav-item a:focus {
@@ -300,6 +327,7 @@ content: "";
 .about .item {
   position: relative;
   margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .about .item .icon-holder {
   position: absolute;
@@ -325,7 +353,7 @@ content: "";
   color: #fff;
 }
 .features .title {
-  color: #074f66;
+  color: #3d3d3f;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -346,6 +374,10 @@ content: "";
 .logo-lasorgente{
 	width:auto;
 	height:175px;
+}
+
+.margin-top{
+	margin-top:20px;
 }
 /* ======= Docs Section ======= */
 .docs {
@@ -474,6 +506,7 @@ content: "";
 .contact .contact-inner {
   max-width: 760px;
   margin: 0 auto;
+  text-align:center;
 }
 .contact .title {
   color: #074f66;
@@ -556,9 +589,12 @@ content: "";
   color: #0c86ae;
 }
 .contact .info .sub-title {
-  color: #0e98c5;
+  color: #074f66;
   margin-bottom: 30px;
   margin-top: 0;
+}
+.list-inline-block{
+	display:inline;
 }
 .contact .social-icons {
   list-style: none;
@@ -567,15 +603,30 @@ content: "";
   display: inline-block;
   margin: 0 auto;
 }
+.contact-icons {
+  list-style: none;
+  padding: 10px 0;
+  margin-bottom: 0;
+  display: inline;
+  margin: 0 auto;
+}
 .contact .social-icons li {
   float: left;
 }
 .contact .social-icons li.last {
   margin-right: 0;
 }
-.contact .social-icons a {
+.log{
+	width:auto;
+	height:175px;
+}
+.icona{
+	margin-top:30px;
+}
+.contact .social-icons .icona {
+  
   display: inline-block;
-  background: #3d3d3f;
+  background: #042a36;
   width: 48px;
   height: 48px;
   text-align: center;
@@ -591,6 +642,30 @@ content: "";
   margin-right: 8px;
   float: left;
 }
+.contact .social-icons li a {
+ display: inline-block;
+  background: #042a36;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  padding-top: 12px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-right: 8px;
+  float: left;
+  
+  
+}
+.center-text{
+	font-size:1.5em;
+}
+
 .contact .social-icons a:hover {
   background: #e85d0f;
 }
@@ -616,6 +691,7 @@ content: "";
 .footer .fa-heart {
   color: #fb866a;
 }
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .header .main-nav button {
@@ -626,10 +702,21 @@ content: "";
   height:500px;
   
 }
-  .logo-lasorgente{
-	width:auto;
-	height:85px;
+.middle-text{
+	margin-left:0;
 }
+.right-text{
+	width:100%;
+	margin-left:0;
+	margin-top:10px;
+	font-size:1.5em;
+}
+.responsive-img{
+	width:100%;
+	height:auto;
+	border-radius:5px;
+}
+  
   .header .main-nav .navbar-collapse {
     padding-left: 15px;
     padding-right: 15px;
@@ -675,10 +762,15 @@ content: "";
     font-size: 18px;
   }
 }
-.responsive-img{
-	width:50%;
-	height:auto;
+
+@media (max-width: 992px) {
+.dark-background-mobile{
+	background-color:#3d3d3f;
 }
+
+
+}
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
