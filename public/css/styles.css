@@ -620,12 +620,17 @@ content: "";
 	width:auto;
 	height:175px;
 }
-.icona{
-	margin-top:30px;
+
+.contact-icons p{
+	padding-top: 12px;
 }
-.contact .social-icons .icona {
+.contact-icons p a:hover{
+	text-decoration:none;
+	text-transform:bold;
+}
+.contact .contact-icons .icona {
   
-  display: inline-block;
+  display: block;
   background: #042a36;
   width: 48px;
   height: 48px;
@@ -639,8 +644,12 @@ content: "";
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  margin-right: 8px;
-  float: left;
+  float:left;
+  position: relative;
+left: 30%;
+}
+.contact-icons div{
+	height:100px;
 }
 .contact .social-icons li a {
  display: inline-block;
@@ -669,10 +678,24 @@ content: "";
 .contact .social-icons a:hover {
   background: #e85d0f;
 }
+.contact .contact-icons a:hover {
+  background: #e85d0f;
+}
+.contact .contact-icons p a:hover {
+  background: #fff;
+}
 .contact .social-icons a .fa {
   color: #fff;
 }
+.contact .contact-icons a .fa {
+  color: #fff;
+}
 .contact .social-icons a .fa:before {
+  font-size: 26px;
+  text-align: center;
+  padding: 0;
+}
+.contact .contact-icons a .fa:before {
   font-size: 26px;
   text-align: center;
   padding: 0;
@@ -758,7 +781,13 @@ content: "";
     padding-top: 7px;
     margin-right: 2px;
   }
-  .contact .social-icons a .fa:before {
+  .contact .contact-icons .social-icons a {
+    width: 36px;
+    height: 36px;
+    padding-top: 7px;
+    margin-right: 2px;
+  }
+  .contact .contact-icons .social-icons a .fa:before {
     font-size: 18px;
   }
 }
@@ -766,6 +795,12 @@ content: "";
 @media (max-width: 992px) {
 .dark-background-mobile{
 	background-color:#3d3d3f;
+}
+.contact-icons p {
+    padding-top: 50px;
+}
+.contact .contact-icons .icona{
+	left:45%;
 }
 
 

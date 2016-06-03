@@ -18,6 +18,11 @@ jQuery(document).ready(function($) {
          		$('#logo-id').removeClass('logo-lasorgente');
              	$('#logo-id').addClass('logo-small');
         	 }
+        	 if ($(window).scrollTop() < 300) {
+        	 	$('#logo-id').removeClass('logo-small');
+        	 	$('#logo-id').addClass('logo-lasorgente');
+             	
+        	 }
         }	
       
     });
