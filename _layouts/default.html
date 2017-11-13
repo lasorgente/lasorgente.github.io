@@ -11,13 +11,21 @@
 {% include camere.html %}
 {% include wellness.html %}
 {% include vacanza-attiva.html %}
-{% include book-now.html %}
-{% include contact.html %}
+{% include prenota-ora.html %}
+{% include contatti.html %}
 {% include footer.html %}
 </body>
 <script>
 
   document.write('<script type="text/javascript" src="https://web4.deskline.net/accommodationtrentino/it/qfind/script/TRN/70dbce06-df81-44cd-8726-1cd19510fdfd/x?pageType=4&containerId=QF1&selAdultsSearchLine1=2&selNights=7&width=180&showDestination=true&showAccType=false&showText=true&showLink=true&lkCS="><\/script>');
+  
+  Galleria.loadTheme("{{ site.baseurl }}public/js/galleria.classic.min.js");
+  Galleria.configure({
+    thumbnails: false,
+    autoplay: 4000,
+    transitionSpeed: 800 
+});
+  Galleria.run('#galleria');
 
 </script>
 </html> 
